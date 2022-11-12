@@ -1,6 +1,20 @@
 console.log("Made With 💗 By Andrew");
 console.log("Start and End 10/11/2022");
 
+document.querySelector("body").style.background = "#292d33";
+let status = false;
+function app() {
+  if (status == false) {
+    console.log(false);
+    document.querySelector("body").style = `background :#fff; color:#000;`;
+    status = true;
+  } else {
+    console.log(true);
+    document.querySelector("body").style = `background :#292d33; color:#fff;`;
+    status = false;
+  }
+}
+
 /*======== NAV MENU=========*/
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle");
